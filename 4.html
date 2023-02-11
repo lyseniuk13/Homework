@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4</title>
+</head>
+<style>
+    .checkbox {
+        padding-left: 20px;
+        line-height: 30px;
+    } 
+
+    .signature {
+        color: grey;
+        line-height: 0px;
+    }
+
+    .box {
+        display: flex;
+        border: 1px solid lightgray;
+        padding-left: 20px;
+        font-size: 80%;
+    }
+
+    .input {
+        color: grey;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+    <body>
+        <div class="box">
+            <div class="input">
+                <p>Title </p> 
+                    <input type="text" placeholder="Contact Support">
+                <p>Route </p>
+                    <input type="text" placeholder="support">
+                <p>Select DocType </p>
+                    <input type="text" placeholder="Issue">
+                <p>Module </p>
+                <input type="text">
+            </div>    
+            <div class="checkbox">
+                <br> <input type="checkbox"> Is Standart 
+                <br> <input type="checkbox"> Published 
+                <br> <input type="checkbox"> Login Required 
+                <br> <input type="checkbox"> Route to Success Link 
+                <br> <input type="checkbox"> Allow Edit 
+                <br> <input type="checkbox"> Allow Multiple 
+                <br> <input type="checkbox"> Show as Grid 
+                <br> <input type="checkbox"> Allow Delete 
+                <br> <input type="checkbox"> Alow Print 
+                <br> <input type="checkbox"> Allow Comments 
+                <br> <input type="checkbox"> Show Attachments 
+                <br> <input type="checkbox"> Allow Incomplete Forms 
+                <p class="signature">Allow saving if mandatory fields are not filled</p>
+            </div>
+        </div>    
+    </body>
+</html>

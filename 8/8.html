@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTubeMusic</title>
+    <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Roboto:500,300,700,400"
+    name="www-roboto"
+    nonce="U6wau8jsbq6RZ2frmugyHw"
+  />
+</head>
+<style>
+    body 
+    {
+        font-family: "Roboto";
+        background: url('8img/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        height: 64px;
+        max-width: 100%;
+        padding: 0 10px 0 10px;
+    }
+    .nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .but:hover {
+        color: rgb(255, 255, 255);
+        transition: 0, 5s linear;
+    }
+    .but {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: gray;
+        margin: 0 30px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .reg {
+        height: 30px;
+        width: 90px;
+        border-radius: 5px;
+        font-weight: 800;
+        font-family: "Roboto";
+    }
+    .srfas {
+        margin: 0 auto 70px;
+        width: 80%;
+    }
+    h2 {
+        color: rgb(159,160,160);
+        margin-bottom: 0;
+        font-size: 100%;
+        font-weight: 400;
+    }
+    h1 {
+        font-size: 50px;
+        margin-top: 5px;
+    }
+    .small {
+        height: 50px;
+        width: 50px;
+        float:left;
+        padding: 0 10px 18px;
+    }
+    .band {
+        color: rgb(159,160,160) !important;
+    }
+    .quick-picks {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .line {
+        width: 33%;
+    }
+    .trackname {
+        color: rgb(255, 255, 255);
+    }
+    .track {
+        min-height: 55px;
+    }
+    .th {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hitsimg {
+        height: 150px;
+        width: 150px;
+    }
+    .hits {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .thtrack {
+        width: 15%;
+    }
+    </style>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="https://music.youtube.com/img/on_platform_logo_dark.svg"/></a>
+        </div>
+        <div class="nav">
+            <a class="but" href="">Home</a>
+            <a class="but" href="">Explore</a>
+            <a class="but" href="">Library</a>
+            <a class="but" href="">Search</a>
+        </div>
+        <button class="reg" type="button">SING IN
+        </button>
+    </div>
+    <div class="srfas">
+        <h2>START RADIO FROM A SONG</h2>
+        <h1>Quick picks</h1>
+        <div class="quick-picks">
+            <div class="line">
+                <div class="track">
+                    <img class="small" src="./8img/Arctic Monkeys.jpg"/>
+                    <h2 class="trackname">I Wana Be Yours</h2>
+                    <h2 class="band">Arctic Monkeys · AM</h2>
+                </div>
+                <div class="track">
+                    <img class="small" src="./8img/Sia.jfif"/>
+                    <h2 class="trackname">Unstoppable</h2>
+                    <h2 class="band">Sia · This Is Acting (Deluxe Version)</h2>
+                </div>
+                <div class="track">
+                    <img class="small" src="./8img/kangi.jpg"/>
+                    <h2 class="trackname">Голова</h2>
+                    <h2 class="band">Канги & Galust · Голова</h2>
+                </div>
+                <div class="track">
+                    <img class="small" src="./8img/Blackieseyes.jpg"/>
+                    <h2 class="trackname">Черные глаза</h2>
+                    <h2 class="band">Айдамир Мугу · Чёрные глаза</h2>
+                    
+                </div>
+            </div>
+            <div class="line">
+                <div class="track">
+                    <img class="small" src="./8img/SHUMEI.jfif"/>
+                    <h2 class="trackname">Біля тополі</h2>
+                    <h2 class="band">SHUMEI · Біля тополі</h2>
+                </div>
+                <div class="track">
+                    <img class="small" src="./8img/Billie Eilish.jpg"/>
+                    <h2 class="trackname">No Time To Die</h2>
+                    <h2 class="band">Billie Eilish · No Time To Die</h2>
+                </div>
+                <div class="track">    
+                    <img class="small" src="./8img/Sevenrose.jpeg"/>
+                    <h2 class="trackname">Верила</h2>
+                    <h2 class="band">Sevenrose · Верила</h2>
+                </div>
+                <div class="track">
+                    <img class="small" src="./8img/stopmusic.jpg"/>
+                    <h2 class="trackname">Стоп музыка</h2>
+                    <h2 class="band">Ислам Мальсуйгенов & Зульфия Ч... · Стоп Музыка</h2>
+                </div>
+            </div>
+            <div class="line">
+                <div class="track">
+                    <img class="small" src="./8img/LusiChebotkina.png"/>
+                    <h2 class="trackname">СОЛНЦЕ МОНАКО</h2>
+                    <h2 class="band">Люся Чеботина · The The end</h2>
+                </div>
+                <div class="track">
+                    <img class="small" src="./8img/Maneskin.jfif"/>
+                    <h2 class="trackname">Beggin'</h2>
+                    <h2 class="band">Måneskin · Chosen</h2>
+                </div>
+                <div class="track">    
+                    <img class="small" src="./8img/Sam Smith.jfif"/>
+                    <h2 class="trackname">Unholy</h2>
+                    <h2 class="band">Sam Smith & Kim Petras · Unholy</h2>
+                </div>
+                <div class="track">        
+                    <img class="small" src="./8img/Jung Kook.jpg"/>
+                    <h2 class="trackname">Dreamers (Music from the FIFA World Cup Qatar 20...</h2>
+                    <h2 class="band">Jung Kook · Dreamers (Music from the FIFA World ...</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="th">
+        <h1>Today's hits</h1>
+        <div class="hits">
+            <div class="thtrack">
+                <img class="hitsimg" src="./8img/released.jpg"/>
+                <h2 class="trackname">RELEASED</h2>
+                <h2 class="band">Griz, Masego Natalie Jane, Wallows</h2>
+            </div>
+            <div class="thtrack">
+                <img class="hitsimg" src="./8img/thehitlist.jpg"/>
+                <h2 class="trackname">The Hit List</h2>
+                <h2 class="band">Taylor Swift, SZA, 21 Savage, Bad Bunny</h2> 
+            </div>
+            <div class="thtrack">
+                <img class="hitsimg" src="./8img/chroma.jpg"/>
+                <h2 class="trackname">Chroma</h2>
+                <h2 class="band">Davis Guetta, Tiёsto, deadmau5, SG Lewis</h2>
+            </div>
+            <div class="thtrack">
+                <img class="hitsimg" src="./8img/oneverithing.jpg"/>
+                <h2 class="trackname">On Everything</h2>
+                <h2 class="band">Moneybagg Yo, Quavo, Lil Durk, Takeoff</h2>
+            </div>
+            <div class="thtrack">
+                <img class="hitsimg" src="./8img/king.jpg"/>
+                <h2 class="trackname">K.iNG</h2>
+                <h2 class="band">BLACKPINK, aespa, TWICE, BTS</h2>
+            </div>
+            <div class="thtrack">
+                <img class="hitsimg" src="./8img/neon.jpg"/>
+                <h2 class="trackname">NEON:Pop Hits</h2>
+                <h2 class="band">David Guetta, Harry Styles, Camila Cabello, Rihanna</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

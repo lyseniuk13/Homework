@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://allfont.ru/allfont.css?fonts=micra" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    ul {
+        list-style-type: none;
+    }
+    body {
+        font-family: 'Micra', arial;
+        width: 80%;
+        font-weight: 600;
+        font-size: 100%;
+        text-transform: uppercase
+    }
+    .month {
+        margin: 0;
+        padding: 10px 0;
+        background-color: rgb(247,245,246);
+    }
+    .month li {
+        display: inline-block;
+        width: 7%;
+        color: rgb(204,195,196);
+        font-size: 80%;
+    }
+    .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: rgb(247,245,246);
+    }
+    .weekdays li {
+        display: inline-block;
+        width: 13%;
+        color: rgb(99,107,105);
+        text-align: center;
+    }
+    .days {
+        margin: 0;
+        padding: 10px 0;
+        background-color: rgb(247,245,246);
+    }
+    .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13%;
+        text-align: center;
+        margin-bottom: 5px;
+        color: rgb(99,107,105);
+        padding: 15px;
+    }
+    .days li .active {
+        padding: 5px;
+        background-color: rgb(248,162,161);
+        color: white !important;
+        border-radius: 8px;
+    }
+    .days li .holid {
+        padding: 5px;
+        color: rgb(248,162,161);
+    }
+    .days li .nextmon {
+        color: rgb(204,195,196);
+    }
+    .month li .thismon {
+        font-size: 120%;
+        color: rgb(99,107,105);
+    }
+</style>    
+<body>
+    <div class="month">
+        <ul>
+            <li>jan</li>
+            <li>feb</li>
+            <li>mar</li>
+            <li><span class="thismon">april</span></li>
+            <li>may</li>
+            <li>jun</li>
+            <li>jul</li>
+            <li>aug</li>
+            <li>sep</li>
+            <li>oct</li>
+            <li>nov</li>
+            <li>dec</li>
+        </ul>
+    </div>
+    
+    <ul class="weekdays">
+        <li>mon</li>
+        <li>tue</li>
+        <li>wed</li>
+        <li>thu</li>
+        <li>fri</li>
+        <li>sat</li>
+        <li>sun</li>
+    </ul>
+
+    <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li><span class="holid">8</span></li>
+        <li>9</li>
+        <li><span class="holid">10</span></li>
+        <li>11</li>
+        <li><span class="active">12</span></li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li><span class="holid">27</span></li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li><span class="nextmon">1</span></li>
+        <li><span class="nextmon">2</span></li>
+        <li><span class="nextmon">3</span></li>
+        <li><span class="nextmon">4</span></li>
+        <li><span class="nextmon">5</span></li>
+    </ul>
+
+</body>
+</html>

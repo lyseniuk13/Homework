@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <style>
+    body{
+    --black-dot-color: #562c0e;
+    --white-dot-color: #efeaf5;
+    --black-figure-color: rgba(32, 25, 25);
+    --white-figure-color: rgb(191, 187, 187);
+}
+
+.dot{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(18, 17, 17);
+    display: inline-block;
+    background-color: var(--white-dot-color);
+}
+
+.board{
+    width: 900px;
+    margin: 20px auto;
+}
+
+.row:nth-child(2n+1)>.dot:nth-child(2n),
+.row:nth-child(2n)>.dot:nth-child(2n+1){
+    background-color: var(--black-dot-color);
+}
+
+.warrior{
+    width: 15px;
+    height: 0px;
+    position: relative;
+    top: 13px;
+    left: 24px;
+    border: 18px solid transparent;
+    border-bottom: 50px solid var(--black-figure-color);
+}
+
+.warrior::before{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    content: ' ';
+    display: block;
+    position: relative;
+    top: -25px;
+    left: -8px;
+    background-color: var(--black-figure-color);
+}
+
+.warrior::after{
+    width: 60px;
+    height: 10px;
+    content: ' ';
+    display: block;
+    position: relative;
+    top: 15px;
+    left: -22.5px;
+    background-color: var(--black-figure-color);
+}
+
+.warrior.white{
+    border-bottom-color: var(--white-figure-color);
+}
+
+.warrior.white::before,
+.warrior.white::after{
+    background-color: var(--white-figure-color);
+}
+
+.rook {
+    width: 25px;
+    height: 0px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+    border: 18px solid transparent;
+    border-bottom: 70px solid var(--black-figure-color);
+}
+.rook::before {
+    width: 39px;
+    height: 30px;
+    content: ' ';
+    display: block;
+    position: relative;
+    top: -15px;
+    left: -7px;
+    background-color: var(--black-figure-color);
+}
+.rook::after {
+    width: 70px;
+    height: 10px;
+    content: ' ';
+    display: block;
+    position: relative;
+    top: 30px;
+    left: -22.5px;
+    background-color: var(--black-figure-color);
+}
+.rook.white{
+    border-bottom-color: var(--white-figure-color);
+}
+
+.rook.white::before,
+.rook.white::after{
+    background-color: var(--white-figure-color);
+}
+.elephant {
+    width: 15px;
+    height: 0px;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    border: 18px solid transparent;
+    border-bottom: 50px solid var(--black-figure-color);
+}
+.elephant::before {
+    width: 25px;
+    height: 40px;
+    content: ' ';
+    display: block;
+    position: relative;
+    top: -30px;
+    left: -5px;
+	border-radius: 12px / 20px;
+    background-color: var(--black-figure-color);
+}
+.elephant::after {
+    width: 61px;
+    height: 10px;
+    content: ' ';
+    display: block;
+    position: relative;
+    top: 5px;
+    left: -23px;
+    background-color: var(--black-figure-color);
+}
+.elephant.white{
+    border-bottom-color: var(--white-figure-color);
+}
+
+.elephant.white::before,
+.elephant.white::after{
+    background-color: var(--white-figure-color);
+}
+  </style>
+  <body>
+    <div class="board">
+      <div class="row">
+        <div class="dot"><div class="rook"></div></div> 
+        <div class="dot"></div>
+        <div class="dot"><div class="elephant"></div></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"><div class="elephant"></div></div>
+        <div class="dot"></div>
+        <div class="dot"><div class="rook"></div></div>
+      </div>
+      <div class="row">
+        <div class="dot"><div class="warrior"></div></div>
+        <div class="dot"><div class="warrior"></div></div>
+        <div class="dot"><div class="warrior"></div></div>
+        <div class="dot"><div class="warrior"></div></div>
+        <div class="dot"><div class="warrior"></div></div>
+        <div class="dot"><div class="warrior"></div></div>
+        <div class="dot"><div class="warrior"></div></div>
+        <div class="dot"><div class="warrior"></div></div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="row">
+        <div class="dot"><div class="warrior white"></div></div>
+        <div class="dot"><div class="warrior white"></div></div>
+        <div class="dot"><div class="warrior white"></div></div>
+        <div class="dot"><div class="warrior white"></div></div>
+        <div class="dot"><div class="warrior white"></div></div>
+        <div class="dot"><div class="warrior white"></div></div>
+        <div class="dot"><div class="warrior white"></div></div>
+        <div class="dot"><div class="warrior white"></div></div>
+      </div>
+      <div class="row">
+        <div class="dot"><div class="rook white"></div></div>
+        <div class="dot"></div>
+        <div class="dot"><div class="elephant white"></div></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"><div class="elephant white"></div></div>
+        <div class="dot"></div>
+        <div class="dot"><div class="rook white"></div></div>
+      </div>
+    </div>
+  </body>
+</html>

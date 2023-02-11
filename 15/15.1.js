@@ -1,0 +1,15 @@
+const questionFirsthline = 'Введіть перший рядок';
+const firthline = prompt(questionFirsthline);
+firthline.length;
+const questionsSecondline = 'Введіть другий рядок';const secondline = prompt(questionsSecondline);
+secondline.length;
+const questionsThridline = 'Введіть третій рядок';const thirdline = prompt(questionsThridline);
+thirdline.length;
+const questionsFourthline = 'Введіть четвертий рядок';
+const fourthline = prompt(questionsFourthline);
+fourthline.length;
+const questionsFifthline = "Введіть п'ятий рядок";
+const fifthline = prompt(questionsFifthline);
+fifthline.length;
+const result = Math.min(firthline.length, secondline.length, thirdline.length, fourthline.length, fifthline.length);
+alert(result);
