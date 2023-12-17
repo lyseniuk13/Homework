@@ -36,5 +36,18 @@ if(number === 1){
 
 
 {
+const number = Math.floor(Math.random() * 20) + 1;
 
+for (let i = 2; i <= 9; i++) {
+    const result = i * number;
+    console.log(`${number} * ${i} = ${result}`);
+}
+}
+
+
+{
+for (let i = 1; i <= 10; i++) {
+    const result = '*'.repeat(i);
+    console.log(result);
+}
 }
