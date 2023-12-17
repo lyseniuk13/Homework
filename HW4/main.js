@@ -4,7 +4,10 @@
 
 
 {
-
+const distance = Math.floor(Math.random()*100+1);
+const time = Math.floor(Math.random()*10+1);
+const speed = distance / time;
+console.log(speed);
 }
 
 
