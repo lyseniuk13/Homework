@@ -20,3 +20,8 @@ if(day === 1){
   if(day === 7) console.log('Saturday');
 }
 }
+
+{
+const pin = Math.floor(Math.random()*10000+1);
+console.log(pin);
+}
