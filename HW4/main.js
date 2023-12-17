@@ -1,5 +1,13 @@
 {
+var randomNumber = Math.floor(Math.random() * (900) + 100);
 
+var reversedNumber = 0;
+while (randomNumber > 0) {
+    reversedNumber = reversedNumber * 10 + randomNumber % 10;
+    randomNumber = Math.floor(randomNumber / 10);
+}
+
+console.log("Згенероване число: " + reversedNumber);
 }
 
 
